@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('SCM Checkout'){
       steps{
-        git 'https://github.com/chinmaypatil8292/AnsibleDockerdemo'
+        git clone 'https://github.com/chinmaypatil8292/AnsibleDockerdemo.git'
       }
     }
     stage('Execute ansible'){
